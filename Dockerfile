@@ -1,11 +1,11 @@
-# Use Java 17 (or your version)
+# Use Java 21 JDK
 FROM eclipse-temurin:21-jdk-alpine
 
-# Add a volume (optional)
-VOLUME /tmp
-
-# Copy the jar built by Maven
+# Copy built JAR
 COPY target/*.jar app.jar
 
-# Start the app
+# Optional: expose port (for docs)
+EXPOSE 8080
+
+# Run the app
 ENTRYPOINT ["java","-jar","/app.jar"]
