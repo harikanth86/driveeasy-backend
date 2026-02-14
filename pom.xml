@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
 <modelVersion>4.0.0</modelVersion>
 <groupId>com.driveeasy</groupId>
-<artifactId>backend</artifactId>
+<artifactId>driveeasy-backend</artifactId>
 <version>1.0</version>
 <parent>
 <groupId>org.springframework.boot</groupId>
